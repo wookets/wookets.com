@@ -14,17 +14,12 @@ html(ng-app="myApp")
     .navbar.navbar-fixed-top.navbar-inverse
       .navbar-inner
         .container
-          a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
-            span.icon-bar
-            span.icon-bar
-            span.icon-bar
           a.brand Wove
-          .nav-collapse.collapse
-            ul.nav.nav-pills
-              li: a(href="#about") About
-              li: a(href="#design") Design
-              li: a(href="#code") Code
-              li: a(href="http://blog.wookets.com") Blog
+          ul.nav.nav-pills
+            li: a(href="#about") About
+            li: a(href="#design") Design
+            li: a(href="#code") Code
+            li: a(href="http://blog.wookets.com") Blog
     
     
     header#overview.masthead.jumbotron
@@ -47,8 +42,50 @@ html(ng-app="myApp")
           h1 
             span About 
             small What a wooket? 
-
+        .row
+          .span4
+            h3 History
+            p The Wove has eaten many cookies, cleared many caches, and ran many a reformats.
+            p For Wookets are feral wild creatures fearful of hairless beasts. You know, the ones that don't eat cookies.
+            p 
+              span Read more on 
+              a(href="http://blog.wookets.com/") blog.wookets.com &rsaquo;
+            p 
+              a(href="http://twitter.com/wookets", class="twitter-follow-button") Follow @wookets
+              scripe(src="http://platform.twitter.com/widgets.js", type="text/javascript")
+          
+          .span4
+            h3 Toolkit
+            p I always find it helpful when fellow creatures share their list of dev tools.
+            ul
+              li Chrome for Browsing
+              li Coda 2 for Code
+              li Node for HTTP
+              li Mongo for DB
+              li Heroku for Host
+              li Tower for Git
+              li Codekit for Awesome
+              li Scrivener for Writes
+          
+          .span4
+            h3 What Else?
+            p Outside of development I watch, listen, read, write, play, coach and try to be nice to fellow lifeforms passing through the woodlands.
+            ul
+              li Give Effort
+              li Take Attitude
+              li Hold Nice
     
+    footer.footer
+      .container
+        p.pull-right
+          a(href="#") Back to top
+        p 
+          span This design shamelfully stolen with all the love in the world from 
+          a(href="http://twitter.github.com/bootstrap/", target="_blank") bootstrap 
+          span by 
+          a(href="http://twitter.com/", target="_blank") twitter
+          span .
+          br
     //- scripts
     script(src="//s3.amazonaws.com/cdn.actifi.com/lib/bootstrap/2.1.1/js/bootstrap.min.js") //- adds bootstrap specific components
 
