@@ -1,0 +1,54 @@
+!!! 5
+html(ng-app="myApp")
+  head
+    //- page info
+    title Wookets Wove - Blues of Grandeur
+    meta(charset="utf-8")
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+
+    //- styles
+    link(rel="stylesheet", type="text/css", href="//netdna.bootstrapcdn.com/twitter-bootstrap/2.1.1/css/bootstrap-combined.min.css")
+    link(rel="stylesheet", type="text/css", href="styles/main.css")
+    
+  body(ng-controller="AppController")
+    .navbar.navbar-fixed-top.navbar-inverse
+      .navbar-inner
+        .container
+          a.btn.btn-navbar(data-toggle="collapse", data-target=".nav-collapse")
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand Wove
+          .nav-collapse.collapse
+            ul.nav.nav-pills
+              li: a(href="#about") About
+              li: a(href="#design") Design
+              li: a(href="#code") Code
+              li: a(href="http://blog.wookets.com") Blog
+    
+    
+    header#overview.masthead.jumbotron
+      .inner
+        .container
+          h1 Wookets Wove
+          p.lead 
+            span The Wove is a professional-personal website regarding the design and development of web applications.
+            br
+            span It includes rants and raves about patterns, architecture, infrastructure, trends, and other binary star systems.
+            br
+          p 
+            strong Furry critter alert: 
+            span The Wove does not attempt to accommodate every kitty cat. Just the ones that meow for food.</p>
+       
+    .container
+    
+      section#about
+        .page-header
+          h1 
+            span About 
+            small What a wooket? 
+
+    
+    //- scripts
+    script(src="//s3.amazonaws.com/cdn.actifi.com/lib/bootstrap/2.1.1/js/bootstrap.min.js") //- adds bootstrap specific components
+
